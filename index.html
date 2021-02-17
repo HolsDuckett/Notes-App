@@ -8,12 +8,14 @@
 </head>
 <body>
   <h1> Notes </h1>
-  <textarea id="note-input" rows="8" cols="80"></textarea>
-  <button id="create-button">create</button>
-  <div><p>BAM! Wrestling is fun!</p> <button id="minimize-1">-</button><button id="expand-1">+</button>
-    <p>Triple H is the best wrestler. EVER.</p><button id="minimize-2">-</button><button id="expand-2">+</button>
-    <p>Hulk Hogan is going down.</p><button id="minimize-3">-</button><button id="expand-3">+</button>
-    </div>
 
+  <textarea id="note-input" rows="8" cols="80"></textarea>
+
+  <button class="create-button" id="create-button">create</button>
+  <div id="all-notes">
+    <div class="notes" id="note-1"><p>BAM! Wrestling is fun!</p> <button class="minimize-button" id="minimize-1">-</button><button class="expand-button" id="expand-1">+</button></div>
+    <div class="notes" id="note-2"><p>Triple H is the best wrestler. EVER.</p><button class="minimize-button" id="minimize-2">-</button><button class="expand-button" id="expand-2">+</button></div>
+    <div class="notes" id="note-3"><p>Hulk Hogan is going down.</p><button class="minimize-button" id="minimize-3">-</button><button class="expand-button"id="expand-3">+</button></div>
+  </div>
 </body>
 </html>

@@ -13,8 +13,9 @@ create button
 
 javascript
 ---------
-record of notes
-create note function --> note object
+record of notes (noteList)
+<!-- create note function (create)  -->
+note object (note)
 
 
 ```
@@ -30,7 +31,7 @@ list of all created notes
 
 javascript
 ----------
-abbreviated notes (function on note object)
+abbreviated notes (function on note object) (abbreviated)
 
 ```
 As a programmer
@@ -44,5 +45,5 @@ hide note - button
 
 javascript
 ----------
-function to change the display to allow whole note
-function to hide the note back to abbreviated 20 chars
+function to change the display to allow whole note (expandNote(note's button #id))
+function to hide the note back to abbreviated 20 chars (minimiseNote(note's button #id))

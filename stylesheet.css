@@ -54,6 +54,7 @@ button:hover {
   width: 40%;
   border-radius: 10px;
   margin: auto;
+  word-wrap: break-word;
 }
 
 .minimize-button{

@@ -14,12 +14,17 @@ function updateList() {
   var notes = document.getElementById('all-notes')
   let tempString = ''
   for (let i = 0; i < notesList.length; i++) {
-    tempString += `<div id="note-${i}" class="notes"><p>${abbreviate(notesList[i])}</p>
-    <button class="minimize-button" id="minimize-${i}">-</button>
-    <button class="expand-button" id="expand-${i}">+</button></div>`
+    tempString += noteLayout(notesList[i],i)
 
   }
   notes.innerHTML = tempString
+
+}
+
+function noteLayout(string, index){
+  return `<div id="note-${index}" class="notes"><p>${abbreviate(string)}</p>
+  <button class="minimize-button" id="minimize-${index}">-</button>
+  <button class="expand-button" id="expand-${index}">+</button></div>`
 
 }
 

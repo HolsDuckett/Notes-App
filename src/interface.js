@@ -1,14 +1,17 @@
 function createNote() {
 
-  notesList.push(document.getElementById('text-box-id').value)
-  var notes = document.getElementById('text-id')
+  notesList.push(document.getElementById('note-input').value)
+  var notes = document.getElementById('all-notes')
   let tempString = ''
   for (let i = 0; i < notesList.length; i++) {
     tempString += `<p>${notesList[i]}</p>`
   }
   notes.innerHTML = tempString
+  console.log(notesList);
+
 }
 
 
 var createButton = document.getElementById('create-button')
-createButton.addEventListener('click', createNote())
+console.log(createButton)
+createButton.addEventListener("click", createNote)

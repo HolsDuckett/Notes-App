@@ -22,7 +22,7 @@ function minimizeNote(index){
 function updateList() {
   var notes = document.getElementById('all-notes')
   let tempHTML = ''
-  for (let i = 0; i < notesList.length; i++) {
+  for (let i = notesList.length - 1; i >= 0 ; i--) {
     tempHTML += noteLayout(notesList[i],i)
 
   }

@@ -11,13 +11,11 @@ createButton.addEventListener("click", createNote)
 
 function expandNote(index){
   noteText = document.getElementById(`note-text-${index}`)
-  noteText.style.color = 'red';
   noteText.textContent = notesList[index]
 }
 
 function minimizeNote(index){
   noteText = document.getElementById(`note-text-${index}`)
-  noteText.style.color = 'inherit';
   noteText.textContent = abbreviate(notesList[index])
 }
 

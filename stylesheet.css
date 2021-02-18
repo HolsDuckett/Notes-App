@@ -11,7 +11,7 @@ body {
   margin: 0 auto;
   border-radius: 5%;
   background-image: url("https://media.bleacherreport.com/f_auto,w_800,h_533,q_auto,c_fill/br-img-images/003/863/240/hi-res-b9bedc57cbec09240b29e467e53ee748_crop_north.jpg");
-  /* background-color: #87bdc0; */
+  background-repeat: no-repeat;/* background-color: #87bdc0; */
   border-style: solid;
   padding: 5%;
 }

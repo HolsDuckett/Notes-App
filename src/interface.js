@@ -15,6 +15,12 @@ function expandNote(index){
   noteText.textContent = notesList[index]
 }
 
+function minimizeNote(index){
+  noteText = document.getElementById(`note-text-${index}`)
+  noteText.style.color = 'inherit';
+  noteText.textContent = abbreviate(notesList[index])
+}
+
 function updateList() {
   var notes = document.getElementById('all-notes')
   let tempHTML = ''
@@ -28,7 +34,7 @@ function updateList() {
 
 function noteLayout(string, index){
   return `<div id="note-${index}" class="notes"><p id='note-text-${index}'>${abbreviate(string)}</p>
-  <button class="minimize-button" id="minimize-${index}">-</button>
+  <button class="minimize-button" onClick="minimizeNote(${index})" id="minimize-${index}">-</button>
   <button class="expand-button" onClick="expandNote(${index})" id="expand-${index}">
   +</button></div>`
 

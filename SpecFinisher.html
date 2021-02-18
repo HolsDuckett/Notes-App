@@ -1,8 +1,28 @@
-
 <!DOCTYPE html>
 <html>
-<script src="pedigree.js"></script>
-<script src="notes.js"></script>
-<script src="notesSpec.js"></script>
+  <head>
+    <div>
+      <title>Pedigree</title>
+      <link rel="icon" type="image/x-icon" href="Pedigree/images/favicon.ico">
+      <link rel="stylesheet" href="Pedigree/Pedigree.css">
+      <h1 id="Pedigree"><img src="Pedigree/images/triple-H.jpg" style="width:4%" alt="triple-H"/> Pedigree </h1>
+    </div>
+  </head>
+  <body>
+    <div id="test-details" ></div>
+  </body>
+  <div>
+    <script src="Pedigree/Pedigree.js"></script>
 
+    <!-- ------------insert src files  ------------ -->
+    <script src="src/interface.js"></script>
+    <script src="src/notes.js"></script>
+
+    <!-- ------------insert spec files ------------ -->
+    <script src="spec/notesSpec.js"></script>
+
+    <!-- ------------------------------------------ -->
+    <script src="Pedigree/testUnpacker.js"></script>
+    <script defer type="text/javascript"> testUnpacker(allTestLog) </script>
+  </div>
 </html>

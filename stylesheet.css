@@ -1,0 +1,77 @@
+
+
+body {
+  background-image: repeating-linear-gradient(42deg, #3c6e71, #5fbff9 , #5863f8 10%);
+}
+
+#content {
+  /* display: none; */
+  text-align: center;
+  width: 800px;
+  margin: 0 auto;
+  border-radius: 5%;
+  background-image: url("https://media.bleacherreport.com/f_auto,w_800,h_533,q_auto,c_fill/br-img-images/003/863/240/hi-res-b9bedc57cbec09240b29e467e53ee748_crop_north.jpg");
+  /* background-color: #87bdc0; */
+  border-style: solid;
+  padding: 5%;
+}
+
+h1 {
+  background-color: rgba(239, 233, 244, 0.73);
+  width: 25%;
+  margin: auto;
+  margin-bottom: 15px;
+  border-radius: 15px;
+
+}
+
+button {
+  padding: 10px 24px;
+  border-radius: 30%;
+  background-color: white;
+  color: black;
+  border: 2px solid #cf5c36;
+  transition-duration: 0.4s;
+
+}
+
+button:hover {
+  background-color: #cf5c36;
+  color: white;
+}
+
+
+#note-input {
+  font-family: "Courier New", monospace;
+  background-color: #c5d86d;
+  border-radius: 10px;
+  width: 60%;
+  resize: none;
+}
+
+.notes {
+  background-color: rgba(197, 216, 109, 0.9);
+  width: 40%;
+  border-radius: 10px;
+  margin: auto;
+}
+
+.minimize-button{
+  font-size: 15px;
+  padding: 0.5%;
+  width: 4.5%;
+  opacity: 1;
+}
+
+.expand-button{
+  font-size: 15px;
+  padding: 0.5%;
+  width: 4.5%;
+  opacity: 2.5;
+}
+
+.create-button{
+    font-size: 20px;
+    padding: 10px 24px;
+
+}

@@ -1,9 +1,13 @@
 function createNote() {
 
-  notesList.push(document.getElementById('note-input').value)
-  updateList()
-}
+  renderEmoji(document.getElementById('note-input').value)
 
+}
+function renderEmoji(emojiless) {
+    getEmojis(emojiless).then(post => {
+    notesList.push(post.emojified_text)
+    updateList()
+  })};
 
 var createButton = document.getElementById('create-button')
 console.log(createButton)

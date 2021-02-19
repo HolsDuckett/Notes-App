@@ -1,3 +1,5 @@
+let jacksvariable = ''
+
 function getEmojis(emojiless) {
   return fetch('https://makers-emojify.herokuapp.com/', {
     method: 'POST',
@@ -13,7 +15,7 @@ function getEmojis(emojiless) {
 
 
 function renderEmoji(emojiless) {
-  getEmojis(emojiless).then(post => {
-    return post.emojified_text
+    getEmojis(emojiless).then(post => {
+    jacksvariable = post.emojified_text
   });
 }
